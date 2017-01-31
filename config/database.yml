@@ -1,0 +1,14 @@
+default: &default
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  pool:     5
+
+development:
+  <<: *default
+  database: waktu_solat_api_development
+
+production:
+  <<: *default
+  database: waktu_solat_api
+  

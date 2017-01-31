@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  zone_id: 1
+  time: 2017-01-10 02:30:46
+
+two:
+  name: MyString
+  zone_id: 1
+  time: 2017-01-10 02:30:46
