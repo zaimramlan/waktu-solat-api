@@ -6,7 +6,7 @@ Malaysia prayer times (waktu solat) JSON API. Data from [JAKIM's E-Solat](http:/
 
 ### Documentation
 
-[https://zaimramlan.github.io/waktu-solat-api](https://zaimramlan.github.io/waktu-solat-api)
+[https://zaimramlan.github.io/waktu-solat-api/](https://zaimramlan.github.io/waktu-solat-api/)
 
 ### Endpoints
 
