@@ -7,7 +7,7 @@ namespace :esolat do
         # destroy all existing records to prevent duplicates
         PrayerTime.destroy_all        
 
-        puts '================== SCRAPING STARTED ==================='.green   
+        puts '================== SCRAPING STARTED ==================='
         zone_codes       = Zone.codes
         hash             = Hash.new
 
@@ -40,8 +40,8 @@ namespace :esolat do
             hash[code] = prayer_times
         end
 
-        ap hash
+        # ap hash
         RecordsHelper.create_prayer_times_from(hash)
-        puts '================= SCRAPING FINISHED =================='.green
+        puts '================= SCRAPING FINISHED =================='
     end
 end

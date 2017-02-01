@@ -7,7 +7,7 @@ namespace :esolat do
         # destroy all existing records to prevent duplicates
         State.destroy_all
             
-        puts '================== SCRAPING STARTED ==================='.green
+        puts '================== SCRAPING STARTED ==================='
         # initialise the hash to store the state and zones
         hash = Hash.new
 
@@ -35,6 +35,6 @@ namespace :esolat do
 
         # ap hash
         RecordsHelper.create_zones_from(hash)
-        puts '================= SCRAPING FINISHED =================='.green
+        puts '================= SCRAPING FINISHED =================='
     end      
 end

@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
-	    <meta property="og:title" content="{{ default: site.title }}"/>
-	    <meta property="og:type" content="article"/>
-	    <meta property="og:url" content="https://zaimramlan.github.io/waktu-solat-api/"/>
-	    <meta property="og:image" content="https://raw.githubusercontent.com/zaimramlan/waktu-solat-api/master/docs/images/waktu-solat-api.png"/>
-	    <meta property="og:description" content="Malaysia prayer times (waktu solat) JSON API. Data from JAKIM's E-Solat.">		
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+        <meta property="og:title" content="{{ default: site.title }}"/>
+        <meta property="og:type" content="article"/>
+        <meta property="og:url" content="https://zaimramlan.github.io/waktu-solat-api/"/>
+        <meta property="og:image" content="https://raw.githubusercontent.com/zaimramlan/waktu-solat-api/master/docs/images/waktu-solat-api.png"/>
+        <meta property="og:description" content="Malaysia prayer times (waktu solat) JSON API. Data from JAKIM's E-Solat.">     
 
-	    <title>Waktu Solat JSON API</title>
-		<link rel="stylesheet" href="./css/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="./js/main.js"></script>
-	</head>
-	<body>
-		<header>
-			<div class="logo-area">
-				<div class="logo">
-					<a class="logo-text" href="https://github.com/zaimramlan/waktu-solat-api">waktu solat</a> api
-				</div>
-			</div>
+        <title>Waktu Solat JSON API</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo-area">
+                <div class="logo">
+                    <a class="logo-text" href="https://github.com/zaimramlan/waktu-solat-api">waktu solat</a> api
+                </div>
+            </div>
 
-			{% include sidebar.html %}
+            {% include sidebar.html %}
 
-			<p class="copyright">
-				<span class="extra-text">
-					Authored and maintained 
-				</span>
-				by <br class="br">
-				<a href="https://github.com/zaimramlan" target="_blank">
-					Zaim Ramlan
-				</a>
-			</p>
-		</header>
-		<div class="main">
-			{{ content }}
-		</div>
-		<script>
-			document.getElementById("open-nav").addEventListener("click", function () {
-				document.body.classList.toggle("nav-open");
-			});
-		</script>
-		<script async defer src="https://buttons.github.io/buttons.js"></script>		
-	</body>
+            <p class="copyright">
+                <span class="extra-text">
+                    Authored and maintained 
+                </span>
+                by <br class="br">
+                <a href="https://github.com/zaimramlan" target="_blank">
+                    Zaim Ramlan
+                </a>
+            </p>
+        </header>
+        <div class="main">
+            {{ content }}
+        </div>
+        <script>
+            document.getElementById("open-nav").addEventListener("click", function () {
+                document.body.classList.toggle("nav-open");
+            });
+        </script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>        
+    </body>
 </html>
