@@ -526,6 +526,8 @@ header {
             font-size: 2rem;
             color: #2c3e50;
             letter-spacing: -1.5px;
+
+            &:hover {text-decoration: none;}
         }            
 
         img {

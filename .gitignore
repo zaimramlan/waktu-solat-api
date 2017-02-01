@@ -19,3 +19,7 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore jekyll tempfiles.
+/docs/_site
+.sass-cache
