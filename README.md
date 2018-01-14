@@ -22,13 +22,16 @@ Malaysia prayer times (waktu solat) JSON API. Data from [JAKIM's E-Solat](http:/
 
 ### Built with Waktu Solat API
 
-[WaktuSolatMy Telegram Bot](https://telegram.me/WaktuSolatMyBot) by [Zaim Ramlan](https://github.com/zaimramlan)
+[WaktuSolatMy Telegram Bot](https://waktusolatbot.my) by [Zaim Ramlan](https://github.com/zaimramlan)
 
 ### Nice To Have
 
 - Pagination for `/prayer_times.json`
 
 ### Changelog
+
+**v1.0.1 - 15/01/2018**
+- Modify sanitiser to offset incorrect prayer times
 
 **v1.0.0 - 01/02/2017**
 - Initial API Release
