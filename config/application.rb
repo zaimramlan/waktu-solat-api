@@ -18,5 +18,8 @@ module WaktuSolatApi
         config.action_dispatch.default_headers = {
             'Access-Control-Allow-Origin' => '*'
         }
+
+        # Auto-load pre-defined Ruby/Rails class extensions
+        config.autoload_paths += Dir[File.join(Rails.root, "lib", "core_ext", "*.rb")].each {|l| require l}
     end
 end

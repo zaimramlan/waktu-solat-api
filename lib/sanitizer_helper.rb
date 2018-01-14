@@ -19,7 +19,22 @@ module SanitizerHelper
         str = str.join(',')
     end
 
-    def self.sanitize_prayer_time(str)
-        return str.gsub(/[\.]+/, ':')
+    def self.sanitize_prayer_time(time, name)
+        # replace '.' with ':' character
+        time = time.gsub(/[\.]+/, ':')
+
+        # in the case of these prayer times are at incorrect hours,
+        # offset them into the correct time
+        case name
+        when 'zohor', 'asar', 'maghrib', 'isyak'
+            prayer_time = Time.parse(time)
+
+            if prayer_time.period == 'am'
+                prayer_time += 12.hours
+                return prayer_time.in_international_time
+            end
+        end
+
+        return time
     end
 end

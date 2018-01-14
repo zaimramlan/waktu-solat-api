@@ -34,7 +34,7 @@ namespace :esolat do
             for i in 0..name_indexes.length-1
                 prayer_name               = rows[name_indexes[i].to_i].downcase
                 prayer_time               = rows[time_indexes[i].to_i]
-                prayer_times[prayer_name] = SanitizerHelper.sanitize_prayer_time(prayer_time)
+                prayer_times[prayer_name] = SanitizerHelper.sanitize_prayer_time(prayer_time, prayer_name)
             end
 
             hash[code] = prayer_times
