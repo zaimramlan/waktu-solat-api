@@ -2,11 +2,11 @@
 
 ![](https://github.com/zaimramlan/waktu-solat-api/blob/master/docs/images/waktu-solat-api.png)
 
-Malaysia prayer times (waktu solat) JSON API. Data from [JAKIM's E-Solat](http://www.e-solat.gov.my).
+Malaysia prayer times (waktu solat) JSON API @ E-Solat API. Data from [JAKIM's E-Solat](http://www.e-solat.gov.my).
 
 ## Built with Waktu Solat API
 
-[WaktuSolatMy Telegram Bot](https://waktusolatbot.my) by [Zaim Ramlan](https://github.com/zaimramlan)
+[Waktu Solat Malaysia Telegram Bot](https://waktusolatbot.my) by [Zaim Ramlan](https://github.com/zaimramlan)
 
 ## About
 
@@ -23,6 +23,17 @@ Malaysia prayer times (waktu solat) JSON API. Data from [JAKIM's E-Solat](http:/
 1. https://waktu-solat-api.herokuapp.com/api/v1/prayer_times.json
 2. https://waktu-solat-api.herokuapp.com/api/v1/zones.json
 3. https://waktu-solat-api.herokuapp.com/api/v1/states.json
+
+## Changelogs
+
+**v1.1.0 - 02/09/2018**
+- Added backup scraper to scrape from a backup source
+
+**v1.0.1 - 15/01/2018**
+- Modify sanitiser to offset incorrect prayer times
+
+**v1.0.0 - 01/02/2017**
+- Initial API Release
 
 ## Improvements
 
@@ -61,13 +72,6 @@ Run the Server
 $ rails server
 ```
 
-## Changelog
+## License
 
-**v1.1.0 - 02/09/2018**
-- Added backup scraper to scrape from a backup source
-
-**v1.0.1 - 15/01/2018**
-- Modify sanitiser to offset incorrect prayer times
-
-**v1.0.0 - 01/02/2017**
-- Initial API Release
+- MIT
