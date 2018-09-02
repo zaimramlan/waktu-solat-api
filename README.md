@@ -1,47 +1,39 @@
-## Waktu Solat API
+# Waktu Solat API
 
 ![](https://github.com/zaimramlan/waktu-solat-api/blob/master/docs/images/waktu-solat-api.png)
 
 Malaysia prayer times (waktu solat) JSON API. Data from [JAKIM's E-Solat](http://www.e-solat.gov.my).
 
-### Documentation
+## Built with Waktu Solat API
 
-[https://zaimramlan.github.io/waktu-solat-api/](https://zaimramlan.github.io/waktu-solat-api/)
+[WaktuSolatMy Telegram Bot](https://waktusolatbot.my) by [Zaim Ramlan](https://github.com/zaimramlan)
 
-### Endpoints
-
-1. https://waktu-solat-api.herokuapp.com/api/v1/prayer_times.json
-2. https://waktu-solat-api.herokuapp.com/api/v1/zones.json
-3. https://waktu-solat-api.herokuapp.com/api/v1/states.json
-
-### About
+## About
 
 - Built with Ruby (2.3.1) on Rails (5.0.1)  
 - Deployed on Heroku on midnight of 01 Feb 2017
 - Data updates every midnight
 
-### Built with Waktu Solat API
+## Documentation
 
-[WaktuSolatMy Telegram Bot](https://waktusolatbot.my) by [Zaim Ramlan](https://github.com/zaimramlan)
+[https://zaimramlan.github.io/waktu-solat-api/](https://zaimramlan.github.io/waktu-solat-api/)
 
-### Nice To Have
+## Endpoints
+
+1. https://waktu-solat-api.herokuapp.com/api/v1/prayer_times.json
+2. https://waktu-solat-api.herokuapp.com/api/v1/zones.json
+3. https://waktu-solat-api.herokuapp.com/api/v1/states.json
+
+## Improvements
 
 - Pagination for `/prayer_times.json`
 
-### Changelog
-
-**v1.0.1 - 15/01/2018**
-- Modify sanitiser to offset incorrect prayer times
-
-**v1.0.0 - 01/02/2017**
-- Initial API Release
-
-### Contributing
+## Contributing
 
 Do fork this project and improve where you see fit. Submit your Pull Request for merge review.  
 <sup>Use the [prepare repository](https://github.com/zaimramlan/waktu-solat-api#prepare-repository) section to help setup the repo on your local environment.</sup>
 
-### Prepare Repository
+## Prepare Repository
 
 Clone the repo and install the dependencies  
 
@@ -68,3 +60,14 @@ Run the Server
 ``` bash
 $ rails server
 ```
+
+## Changelog
+
+**v1.1.0 - 02/09/2018**
+- Added backup scraper to scrape from a backup source
+
+**v1.0.1 - 15/01/2018**
+- Modify sanitiser to offset incorrect prayer times
+
+**v1.0.0 - 01/02/2017**
+- Initial API Release
