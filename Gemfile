@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.1'
+ruby '2.4.2'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -15,6 +15,7 @@ gem 'jquery-rails',            '~> 4.2.2'
 gem 'uglifier',                '>= 1.3.0'
 gem 'turbolinks',              '~> 5'
 gem 'jbuilder',                '~> 2.5'
+gem 'httparty',                '~> 0.16.2'
 gem 'figaro',                   git: 'https://github.com/zaimramlan/figaro.git'
 gem 'nokogiri'
 
