@@ -33,12 +33,9 @@ namespace :esolat do
                 end
 
                 hash[code] = prayer_times
-
-                ap code
-                ap hash[code]
             end
 
-            ap hash
+            # ap hash
             RecordsHelper.create_prayer_times_from(hash)
             puts '================= SCRAPING FINISHED =================='
         end
