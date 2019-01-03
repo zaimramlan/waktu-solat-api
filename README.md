@@ -26,6 +26,9 @@ Malaysia prayer times (waktu solat) JSON API @ E-Solat API. Data from [JAKIM's E
 
 ## Changelogs
 
+**v1.2.0 - 04/01/2019**
+- Added v2 scraper to scrape from e-solat's new format
+
 **v1.1.0 - 02/09/2018**
 - Added backup scraper to scrape from a backup source
 
@@ -63,7 +66,7 @@ $ rake db:create db:migrate
 Download the list of states, zones and prayer times  
 
 ``` bash
-$ rake esolat:scrapezones esolat:scrapetimes
+$ rake esolat:v2:scrapezones esolat:v2:scrapetimes
 ```
 
 Run the Server  
