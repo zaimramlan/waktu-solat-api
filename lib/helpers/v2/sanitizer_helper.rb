@@ -27,9 +27,23 @@ module Helpers
                 str = str.strip
             end
 
+            def self.sanitize_prayer_name(name)
+                name = name.downcase
+
+                case name
+                when 'fajr'  then return 'subuh'
+                when 'dhuhr' then return 'zohor'
+                when 'asr'   then return 'asar'
+                when 'isha'  then return 'isyak'
+                else return name
+                end
+            end
+
             def self.sanitize_prayer_time(time, name)
                 # replace '.' with ':' character
                 time = time.gsub(/[\.]+/, ':')
+                # remove seconds
+                time = time.split(':').first(2).join(':')
 
                 # in the case of these prayer times are at incorrect hours,
                 # offset them into the correct time
