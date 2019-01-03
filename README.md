@@ -26,6 +26,9 @@ Malaysia prayer times (waktu solat) JSON API @ E-Solat API. Data from [JAKIM's E
 
 ## Changelogs
 
+**v1.2.1 - 04/01/2019**
+- Resolve minor issue
+
 **v1.2.0 - 04/01/2019**
 - Added v2 scraper to scrape from e-solat's new format
 
