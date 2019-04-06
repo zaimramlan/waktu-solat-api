@@ -15,14 +15,9 @@ namespace :esolat do
 
             zone_codes.each do |code|
                 url = ENV['MAIN_PRAYER_TIMES_URL'] + code
-
-                begin
-                    response = HTTParty.get(url)
-                rescue
-                    response = HTTParty.get(url)
-                end
-
-                data         = response.parsed_response['prayerTime'].first
+                response = perform_request(url)
+                
+                data = response.parsed_response['prayerTime'].first
                 prayer_times = Hash.new
 
                 data.each do |name, time|
@@ -38,6 +33,16 @@ namespace :esolat do
             # ap hash
             RecordsHelper.create_prayer_times_from(hash)
             puts '================= SCRAPING FINISHED =================='
+        end
+
+        def perform_request(url)
+            begin
+                response = HTTParty.get(url)
+            rescue
+                response = perform_request(url)
+            end
+
+            return response
         end
 
         def is_a_prayer(name)
