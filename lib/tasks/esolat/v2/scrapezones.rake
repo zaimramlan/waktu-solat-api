@@ -14,7 +14,7 @@ namespace :esolat do
             hash = Hash.new
 
             url  = ENV['MAIN_ZONE_URL']
-            page = Nokogiri::HTML(open(url))
+            page = perform_open(url)
 
             # retrieve the zone codes
             rows = page.css('optgroup').to_a
@@ -39,6 +39,16 @@ namespace :esolat do
             # ap hash
             RecordsHelper.create_zones_from(hash)
             puts '================= SCRAPING FINISHED =================='
+        end
+
+        def perform_open(url)
+            begin
+                page = Nokogiri::HTML(open(url))
+            rescue
+                page = perform_open(url)
+            end
+
+            return page
         end
     end
 end
