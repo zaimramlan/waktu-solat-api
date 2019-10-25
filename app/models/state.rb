@@ -3,7 +3,7 @@ class State < ApplicationRecord
 
     def self.details
         array  = Array.new
-        states = State.all
+        states = State.all.includes(:zones)
         states.each {|state| data = {name: state.name, zones: state.zones}; array.push(data)}
 
         array
