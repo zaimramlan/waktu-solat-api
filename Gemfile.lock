@@ -98,6 +98,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.13.0)
     multi_xml (0.6.0)
+    newrelic_rpm (6.7.0.359)
     nio4r (2.5.2)
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
@@ -187,6 +188,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails (~> 4.2.2)
   listen (~> 3.0.5)
+  newrelic_rpm
   nokogiri
   pg (~> 0.19.0)
   puma (~> 3.12.1)
