@@ -10,8 +10,8 @@ Malaysia prayer times (waktu solat) JSON API @ E-Solat API. Data from [JAKIM's E
 
 ## About
 
-- Built with Ruby (2.3.1) on Rails (5.0.1)
-- Deployed on Heroku on midnight of 01 Feb 2017
+- Built with Ruby (2.4.2) on Rails (5.2.3)
+- First deployed on Heroku on midnight of 01 Feb 2017
 - Data updates every midnight
 
 ## Documentation
@@ -24,9 +24,9 @@ Malaysia prayer times (waktu solat) JSON API @ E-Solat API. Data from [JAKIM's E
 2. https://waktu-solat-api.herokuapp.com/api/v1/zones.json
 3. https://waktu-solat-api.herokuapp.com/api/v1/states.json
 
-## Improvements
+## Future Improvements
 
-- Pagination for `/prayer_times.json`
+- [ ] Pagination for `/prayer_times.json`
 
 ## Contributing
 
