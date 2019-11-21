@@ -1,0 +1,19 @@
+common: &default_settings
+  license_key: <%= ENV['NEW_RELIC_LICENSE_KEY'] %>
+  app_name: Waktu Solat API
+  log_level: info
+
+development:
+  <<: *default_settings
+  app_name: Waktu Solat API (Development)
+
+test:
+  <<: *default_settings
+  monitor_mode: false
+
+staging:
+  <<: *default_settings
+  app_name: Waktu Solat API (Staging)
+
+production:
+  <<: *default_settings

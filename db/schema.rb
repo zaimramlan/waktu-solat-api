@@ -10,35 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170114094404) do
+ActiveRecord::Schema.define(version: 2017_01_14_094404) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "prayer_times", force: :cascade do |t|
-    t.string   "name"
-    t.string   "time"
+  create_table "prayer_times", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.string "time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "prayer_times_zones", force: :cascade do |t|
+  create_table "prayer_times_zones", id: :serial, force: :cascade do |t|
     t.integer "zone_id"
     t.integer "prayer_time_id"
-    t.index ["prayer_time_id"], name: "index_prayer_times_zones_on_prayer_time_id", using: :btree
-    t.index ["zone_id"], name: "index_prayer_times_zones_on_zone_id", using: :btree
+    t.index ["prayer_time_id"], name: "index_prayer_times_zones_on_prayer_time_id"
+    t.index ["zone_id"], name: "index_prayer_times_zones_on_zone_id"
   end
 
-  create_table "states", force: :cascade do |t|
-    t.string   "name"
+  create_table "states", id: :serial, force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  create_table "zones", force: :cascade do |t|
-    t.string   "name"
-    t.integer  "state_id"
-    t.string   "code"
+  create_table "zones", id: :serial, force: :cascade do |t|
+    t.string "name"
+    t.integer "state_id"
+    t.string "code"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

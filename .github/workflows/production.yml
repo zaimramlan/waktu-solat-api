@@ -1,0 +1,19 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Deploy app
+      env:
+        TOKEN: ${{ secrets.HEROKU_API_TOKEN }}
+        APP: ${{ secrets.HEROKU_APP_PRODUCTION }}
+      run: git push -f https://heroku:$TOKEN@git.heroku.com/$APP.git HEAD:master
