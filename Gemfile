@@ -18,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'httparty', '~> 0.16.2'
 gem 'figaro', git: 'https://github.com/zaimramlan/figaro.git'
 gem 'nokogiri'
+gem 'newrelic_rpm'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
