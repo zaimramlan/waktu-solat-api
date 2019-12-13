@@ -103,7 +103,7 @@ GEM
     nokogiri (1.10.5)
       mini_portile2 (~> 2.4.0)
     pg (0.19.0)
-    puma (3.12.1)
+    puma (3.12.2)
     rack (2.0.7)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
@@ -191,7 +191,7 @@ DEPENDENCIES
   newrelic_rpm
   nokogiri
   pg (~> 0.19.0)
-  puma (~> 3.12.1)
+  puma (~> 3.12.2)
   rails (~> 5.2.0)
   sass-rails (~> 5.0)
   spring (~> 2.0)
