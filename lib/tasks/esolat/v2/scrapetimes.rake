@@ -7,16 +7,18 @@ namespace :esolat do
             include Helpers::V2
 
             # destroy all existing records to prevent duplicates
-            PrayerTime.destroy_all        
+            PrayerTime.destroy_all
 
             puts '================== SCRAPING STARTED ==================='
             zone_codes = Zone.codes
             hash       = Hash.new
 
             zone_codes.each do |code|
+                puts 'SCRAPING ZONE: ' + code
+
                 url = ENV['MAIN_PRAYER_TIMES_URL'] + code
                 response = perform_request(url)
-                
+
                 data = response.parsed_response['prayerTime'].first
                 prayer_times = Hash.new
 
